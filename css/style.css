@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Regular"),
+    url("../fonts/InterRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter SemiBold"),
+    url("../fonts/InterSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter Bold"),
+    url("../fonts/InterBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-card: #111827;
+  --color-text-subtitle: #94A3B8;
+  --color-btn-bg: #3B82F6;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 16px;
+  border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex-basis: 300px;
+  flex-shrink: 1;
+
+  background-color: var(--color-bg-card);
+  color: #fff;
+}
+.card__img {
+  border-radius: 16px;
+  max-width: 268px;
+  margin-bottom: 12px;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.card__subtitle{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 27px;
+  color: var(--color-text-subtitle);
+}
+
+.card__price {
+  margin-top: auto;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__total {
+  font-size: 18px;
+}
+
+.card__btn {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--color-btn-bg);
+  padding: 10px 16px;
+  border-radius: 12px;
+}
